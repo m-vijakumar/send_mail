@@ -19,7 +19,7 @@
             public static class SMTPAuthenticator extends Authenticator{
             
             public  PasswordAuthentication getpassAuthentication(){
-                return new PasswordAuthentication("Vbankofindia","***your password***");
+                return new PasswordAuthentication("*username*","***your password***");
                 }
             }
             
@@ -32,14 +32,14 @@
                 int result=0;
                 if(request.getParameter("send")!=null){
                     
-                   String  s_user="Vbankofindia";
+                   String  s_user="*username*";
                    String s_password="***your password***";
                    String s_host="smtp.gmail.com";
                    int s_port=465;
                    
                    
                    String mail_to=request.getParameter("to");
-                   String mail_from="Vbankofindia@gmail.com";
+                   String mail_from="*Emailaddresss*@gmail.com";
                    String mail_subject =request.getParameter("subject");
                    String mail_text =request.getParameter("message");
                    
