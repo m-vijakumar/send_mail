@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Sending An Email</h1>
+    <center>
+        <form method="get" action="send.jsp">            
+            <label>Enter Email</label><input type="text" name="to" size="50" /><br><br>
+            <label>Enter Subject </label><input type="text" name="subject" size="50" /><br><br>
+            <label>Enter message</label><textArea name="message" row="10" cols="50" ></textarea><br><br>
+            <input type="hidden" name="hidden" value="" /><br><br>
+            <input type="submit" value="send" name="send" />
+            
+        </form>
+    </center>
+    </body>
+</html>
